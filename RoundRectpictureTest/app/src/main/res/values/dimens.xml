@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="view_height">201dp</dimen>
+    <dimen name="view_width">151dp</dimen>
+
+    <dimen name="view_height_drawable">201dp</dimen>
+    <dimen name="view_width_drawable">151dp</dimen>
+</resources>
