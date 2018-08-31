@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //BitmapShader用于自定义view
         BitmapShaderImageView picture_1 = (BitmapShaderImageView)findViewById(R.id.imageview_0);
-        picture_1.setUrl(path_2);
+        picture_1.setUrl(path_1);
 
 
         imageView = (ImageView)findViewById(R.id.imageview_1);
-//        getURLImageView();
+        getURLImageView();
 
     }
 
@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
             if(loadedImage != null){
-                imageView.setImageDrawable(new RoundImageDrawable(loadedImage,1));
+                //
+                imageView.setImageDrawable(new RoundImageDrawable(loadedImage,0,new int[]{1,2,4}));
             }
 
         }

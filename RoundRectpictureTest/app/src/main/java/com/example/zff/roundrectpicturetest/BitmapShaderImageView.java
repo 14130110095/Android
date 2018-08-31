@@ -128,12 +128,14 @@ public class BitmapShaderImageView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         if(defaultBitmap != null){
-//            //画圆角矩形
-//            rect.set(0,0,mWidth,mHight);
-//            canvas.drawRoundRect(rect,25,25,mPaint);
-//            canvas.translate((mWidth/3)*2,70);
+            //画圆角矩形
+            rect.set(0,0,mWidth,mHight);
+            canvas.drawRoundRect(rect,25,25,mPaint);
+            canvas.translate((mWidth/3)*2,70);
+
+
             //画圆形
-            canvas.drawCircle(mMinWidth/2,mMinWidth/2,mMinWidth/2,mPaint);
+//            canvas.drawCircle(mMinWidth/2,mMinWidth/2,mMinWidth/2,mPaint);
 
         }
 
