@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:id= "@+id/relativelayout_Container"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#33000000">
+
+            <TextView
+                android:id="@+id/texttime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:layout_marginRight="2dp"
+                android:text="00"/>
+
+            <TextView
+                android:id="@+id/line_1"
+                android:layout_toRightOf="@+id/texttime"
+                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/textString"
+                android:layout_toRightOf="@+id/line_1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_marginRight="2dp"
+                android:text="开通会员去广告"/>
+
+            <TextView
+                android:id="@+id/line_2"
+                android:layout_toRightOf="@+id/textString"
+                android:layout_height="wrap_content"
+                android:layout_width="1dp"
+                android:background="#ffffff"/>
+
+            <TextView
+                android:id="@+id/close"
+                android:layout_toRightOf="@+id/line_2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="X"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
